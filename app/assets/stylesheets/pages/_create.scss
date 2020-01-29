@@ -1,0 +1,115 @@
+.inscription-container {
+  height: 75vh;
+  background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.4)), url('https://vans.pilote.fr/wp-content/uploads/sites/2/2019/07/VAN-PILOTE-V600G.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.inscription-form-container {
+  margin: 0 auto;
+  position: relative;
+  top: 30%;
+  transform: translateY(-30%);
+  transition: ease .3s;
+}
+
+.inscription-intro-heading {
+  width: 70%;
+  margin: 0 auto;
+  padding-left: 10px;
+
+  h2,
+  p {
+    color: white;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+#inscription {
+  width: 70%;
+  margin: 0 auto;
+
+  #name,
+  #email,
+  textarea {
+    margin: 20px 0;
+    height: 66px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+  }
+
+  #name,
+  #email,
+  textarea
+  ::placeholder {
+    font-weight: 700;
+    color: #ced4da;
+    opacity: 1;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+}
+
+
+.inscription-form {
+  display: flex;
+  flex-direction: column;
+
+  h2,
+  p {
+    color: white;
+  }
+}
+
+
+#flash-success {
+  transition: ease .3s;
+  width: 70%;
+  margin: 0 auto;
+  top: 30%;
+  transform: translateY(-30%);
+  color: white;
+  font-size: 24px;
+  padding: auto;
+
+  #flash-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #fed136;
+    color: white;
+    border-radius: 25px 25px 0 0;
+  }
+
+  strong {
+    margin: 0 auto;
+  }
+
+  #flash-content {
+    border-bottom: solid #fed136;
+    border-left: solid #fed136;
+    border-right: solid #fed136;
+    border-radius: 0 0 25px 25px;
+    padding: 25px;
+  }
+}
+
+#inscription-content-mobile{display: block;}
+
+@media screen and (max-width: 768px) {
+
+  #inscription-content-mobile{display: none;}
+  #mobile-title-inscription{font-size: 24px;}
+  #flash-content{font-size: 16px;}
+}
+
+#pictos {
+  padding-top: 25px;
+}
+
+
