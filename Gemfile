@@ -1,24 +1,28 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
+ruby '2.6.5'
 
-gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
+gem 'rails', '~> 5.2.4'
 gem 'sqlite3'
 gem 'puma', '~> 3.11'
-gem 'sass-rails', '~> 5.0'
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'bootstrap', '~> 4.4.1'
+gem 'sassc-rails', '>= 2.1.0'
 gem 'uglifier', '>= 1.3.0'
+gem 'jquery-rails'
+gem 'simple_form'
+
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+
 gem 'bootsnap', '>= 1.1.0', require: false
-gem 'bootstrap-sass'
-gem 'autoprefixer-rails'
-gem 'jquery-rails'
-gem 'google-api-client'
 
 group :development, :test do
-gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
