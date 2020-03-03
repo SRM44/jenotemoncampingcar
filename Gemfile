@@ -5,13 +5,18 @@ ruby '2.6.5'
 
 gem 'rails', '~> 5.2.4'
 gem 'sqlite3'
-gem 'puma', '~> 3.11'
+gem 'puma', ">= 3.12.4"
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'bootstrap', '~> 4.4.1'
 gem 'sassc-rails', '>= 2.1.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'simple_form'
+
+
+gem "nokogiri", ">= 1.10.8"
+
+
 
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 
@@ -36,6 +41,7 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
+  gem 'dotenv-rails'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
