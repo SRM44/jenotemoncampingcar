@@ -5,7 +5,7 @@ ruby '2.6.5'
 
 gem 'rails', '~> 5.2.4'
 gem 'sqlite3'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'bootstrap', '~> 4.4.1'
 gem 'sassc-rails', '>= 2.1.0'
