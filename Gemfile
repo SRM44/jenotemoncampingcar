@@ -15,7 +15,7 @@ gem 'simple_form'
 
 
 gem "nokogiri", ">= 1.10.8"
-
+gem 'cloudinary', '~> 1.9.1'
 
 
 gem 'sprockets-rails', :require => 'sprockets/railtie'
